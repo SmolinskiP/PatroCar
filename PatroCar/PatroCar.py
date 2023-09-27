@@ -56,7 +56,6 @@ while i < len(points):
         lines.append((points[i], points[0]))
     #print(points[i])
     i+=1
-    
 i = 0
 lines2 = []
 while i < len(points2):
@@ -77,6 +76,12 @@ cars_list.append(car_red)
 #LETS GO
 running = True
 while running:
+    
+    #IF BORED, QUIT
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+            
     #KEYS FOR PLAYER
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]:
@@ -99,10 +104,6 @@ while running:
             elif car_red.speed > -100:
                 car_red.speed-=0.2
                 
-    #IF BORED, QUIT
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
                 
     #GIVE EVERY CAR RANDOM VALUES EVERY LOOP AND USE BUILT-IN LIDAR, REMOVE AFTER AI!
     for car in cars_list:
