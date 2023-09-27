@@ -1,7 +1,7 @@
 import random
 import numpy as np
 
-def Generate_Random_Points(x, y, amount=24, offset=0): #THIS FUNCTION SHOULD BE PRETTIER, WHAT A FUCKING MESS. MAGIC WORKING ANYWAY, DONT TOUCH ANYMORE
+def Generate_Random_Points(x, y, amount=12, offset=0): #THIS FUNCTION SHOULD BE PRETTIER, WHAT A FUCKING MESS. MAGIC WORKING ANYWAY, DONT TOUCH ANYMORE
 
     point_list = []
     

@@ -32,9 +32,11 @@ while i < no_cars:
 #CREATE POINTS FOR MAP
 points = Generate_Random_Points(screen.get_width(), screen.get_height())
 points2 = Generate_Random_Points(screen.get_width(), screen.get_height(), offset=200)
+
+
 collision_lane = 50 #FORGOT WTF IS THIS, MAYBE NECCESARY
 
-#FUNCTION TO SORT POINTS BY DISTANCE
+#FUNCTION CALCULATE INTERSECTION POINT BETWEEN LIDAR AND MAP
 def intersect_line_line(P0, P1, Q0, Q1):  
     d = (P1[0]-P0[0]) * (Q1[1]-Q0[1]) + (P1[1]-P0[1]) * (Q0[0]-Q1[0]) 
     if d == 0:
@@ -137,7 +139,7 @@ while running:
                 car.rotation -=1
                 if car.rotation <= 0:
                     car.rotation = 360 + car.rotation
-                car.speed-=0.2
+                car.speed-=0.3
                 car.lidar[2] = False
             if car.lidar[3] == True:
                 car.rotation +=1
@@ -179,13 +181,15 @@ while running:
             for line in lines:
                 intersection_point = intersect_line_line(startpoint, final_endpoint, line[0], line[1])
                 if intersection_point != None:
-                    #print(intersection_point)
+                    distance = math.dist(intersection_point, startpoint)
+                    print("Lidar %s - %s jednostek " % (j, distance))
                     pygame.draw.circle(screen, (255, 0, 0), intersection_point, 4)
                     car.lidar[j] = True
             for line in lines2:
                 intersection_point = intersect_line_line(startpoint, final_endpoint, line[0], line[1])
                 if intersection_point != None:
-                    #print(intersection_point)
+                    distance = math.dist(intersection_point, startpoint)
+                    print("Lidar %s - %s jednostek " % (j, distance))
                     pygame.draw.circle(screen, (255, 0, 0), intersection_point, 4)
                     car.lidar[j] = True
             j+=1
