@@ -9,7 +9,7 @@ Instructions:
 3. Cd into Patro_Car directory and run with "python run.py"
 
 Environment has few attributes to modify:
-game_fps (default=300) - if ```python render=True``` define speed of game clock
-rotation_amount (default=6)
-max_speed (default=4)
-acceleration_amount (default=0.1)
+game_fps (default=300) - if ```python render=True``` define speed of game clock\
+rotation_amount (default=6)\
+max_speed (default=4)\
+acceleration_amount (default=0.1)\
