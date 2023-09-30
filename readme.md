@@ -18,3 +18,4 @@ https://github.com/SmolinskiP/PatroCar/assets/49648588/1780c99c-4976-4fd2-a021-b
 
 Great [TUTORIAL](https://www.youtube.com/watch?v=Mut_u40Sqz4&t) about this topic:<br/>
 
+Car trained by [PPO](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html) algorithm from stable_baselines3.
