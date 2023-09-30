@@ -17,4 +17,4 @@ acceleration_amount (default=0.1)<br/><br/>
 https://github.com/SmolinskiP/PatroCar/assets/49648588/1780c99c-4976-4fd2-a021-b11476dd157b
 
 Great tutorial about this topic:<br/>
-https://www.youtube.com/watch?v=Mut_u40Sqz4&t
+[TUTORIAL][(https://www.google.com](https://www.youtube.com/watch?v=Mut_u40Sqz4&t)https://www.youtube.com/watch?v=Mut_u40Sqz4&t)
