@@ -1,0 +1,13 @@
+setup.py
+race_track/__init__.py
+race_track.egg-info/PKG-INFO
+race_track.egg-info/SOURCES.txt
+race_track.egg-info/dependency_links.txt
+race_track.egg-info/top_level.txt
+race_track/envs/__init__.py
+race_track/envs/race_track.py
+race_track/wrappers/__init__.py
+race_track/wrappers/clip_reward.py
+race_track/wrappers/discrete_actions.py
+race_track/wrappers/reacher_weighted_reward.py
+race_track/wrappers/relative_position.py

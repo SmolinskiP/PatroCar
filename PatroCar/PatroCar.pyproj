@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2818bd14-66f1-4ad1-9934-c4c2e0bf11c0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PatroCar.py</StartupFile>
+    <StartupFile>OLD\PatroCar.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,9 +21,27 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="classes.py" />
-    <Compile Include="point_generator.py" />
-    <Compile Include="PatroCar.py" />
+    <Compile Include="run.py" />
+    <Compile Include="OLD\classes.py" />
+    <Compile Include="race_track\envs\__init__.py" />
+    <Compile Include="race_track\envs\race_track.py" />
+    <Compile Include="race_track\wrappers\clip_reward.py" />
+    <Compile Include="race_track\wrappers\discrete_actions.py" />
+    <Compile Include="race_track\wrappers\relative_position.py" />
+    <Compile Include="race_track\wrappers\reacher_weighted_reward.py" />
+    <Compile Include="race_track\wrappers\__init__.py" />
+    <Compile Include="setup.py" />
+    <Compile Include="OLD\point_generator.py" />
+    <Compile Include="OLD\PatroCar.py" />
+    <Compile Include="race_track\__init__.py" />
+    <Compile Include="OLD\test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OLD\" />
+    <Folder Include="race_track\" />
+    <Folder Include="race_track\envs\" />
+    <Folder Include="race_track\envs\img\" />
+    <Folder Include="race_track\wrappers\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

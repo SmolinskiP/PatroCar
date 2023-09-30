@@ -28,7 +28,6 @@ def Generate_Random_Points(x, y, amount=12, offset=0): #THIS FUNCTION SHOULD BE 
     wall_points = amount // 4
     point_list.append([random.randint(x/factor*(factor-1)-offset, x-offset), 10+offset])
     while wall_points > 0:
-        print(wall_points)
         if wall_points >= 2:
             point_list.append([random.randint(x/factor*(factor-1)-offset, x-offset), y/wall_points-10+offset])
         else:
@@ -44,7 +43,6 @@ def Generate_Random_Points(x, y, amount=12, offset=0): #THIS FUNCTION SHOULD BE 
             point_list.append([random.randint(0+offset, x/factor+offset), y/wall_points-10+offset])
         wall_points-=1
         
-    print(point_list)
     coords = np.array(point_list)
     cc_x, cc_y = coords.mean(0)
     x, y = coords.T

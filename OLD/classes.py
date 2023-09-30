@@ -1,4 +1,4 @@
-import pygame, os, math
+﻿import pygame, os, math
 cur_dir = os.getcwd()
 
 def calculate_new_xy(old_xy, speed, angle_in_radians, screen):
