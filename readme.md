@@ -7,7 +7,8 @@ Instructions:
 1. Clone this project.
 2. Use build.bat to install env (i messed some paths, and I don't have the time or inclination to correct it - .bat fixed it in no time)
 3. Install dependencies (pip install pygame, gymnasium, stable_baselines3)
-4. Cd into Patro_Car directory and run with "python run.py"
+4. Edit run.py file according to your needs.
+5. Cd into Patro_Car directory and run with "python run.py"
 
 Environment has few attributes to modify:<br/>
 game_fps (default=300) - if ```python render=True``` define speed of game clock<br/>
