@@ -1,7 +1,7 @@
 # Self-driven AI car
 ![Working](https://github.com/SmolinskiP/PatroCar/assets/49648588/1593a9f4-7ad4-4087-99d9-a38efa27e515)
 
-Project written by creating custom [Gymnasium]([https://www.google.com](https://gymnasium.farama.org/)https://gymnasium.farama.org/) environment.
+Project written by creating custom [Gymnasium]((https://gymnasium.farama.org/)https://gymnasium.farama.org/) environment.
 
 Instructions:
 1. Clone this project.
@@ -16,5 +16,5 @@ acceleration_amount (default=0.1)<br/><br/>
 
 https://github.com/SmolinskiP/PatroCar/assets/49648588/1780c99c-4976-4fd2-a021-b11476dd157b
 
-Great tutorial about this topic:<br/>
-[TUTORIAL](https://www.youtube.com/watch?v=Mut_u40Sqz4&t)
+Great [TUTORIAL](https://www.youtube.com/watch?v=Mut_u40Sqz4&t) about this topic:<br/>
+
