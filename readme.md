@@ -11,7 +11,7 @@ Instructions:
 5. Cd into Patro_Car directory and run with "python run.py"
 
 Environment has few attributes to modify:<br/>
-game_fps (default=300) - if ```python render=True``` define speed of game clock<br/>
+game_fps (default=300) - if ```render_mode="human"``` in gym.make(env): define speed of game clock<br/>
 rotation_amount (default=6)<br/>
 max_speed (default=4)<br/>
 acceleration_amount (default=0.1)<br/><br/>
